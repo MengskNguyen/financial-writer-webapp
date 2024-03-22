@@ -10,12 +10,14 @@ dotenv.load_dotenv()
 
 tools = load_tools(["serpapi"])
 llm = ChatOpenAI(temperature=0.1)
+
 prompt = ChatPromptTemplate.from_messages(
     [
         (
             "system",
             """
-                You are a very knowledge financial writer, based on information user input, you will write an article contains: 
+                You are a very knowledge financial writer, your name is {name}, you will first introduce yourself, then based on information user input, 
+                you will write an article contains:
                 a title with no more than 55 characters, description with no more than 160 characters and body no more than 500 words
             """
         ),
