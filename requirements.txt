@@ -1,5 +1,9 @@
 langchain
 langchain_openai
+langchain-community
 streamlit
 python-dotenv
 google-search-results
+unstructured
+tiktoken
+python-magic-bin
